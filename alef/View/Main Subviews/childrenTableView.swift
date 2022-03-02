@@ -76,6 +76,7 @@ class childrenTableView: UIView {
         table.delegate          = self
         table.dataSource        = self
         table.allowsSelection   = false
+        table.backgroundColor   = .white
         
         
         header.addSubview(addButton)
@@ -120,6 +121,7 @@ extension childrenTableView: UITableViewDelegate, UITableViewDataSource {
                                                height: .formHeight),
                                  deleteButton: true)
         naView.delete?.cell = tabelCell
+        tabelCell.backgroundColor = .white
         tabelCell.contentView.addSubview(naView)
         return tabelCell
     }

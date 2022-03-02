@@ -11,8 +11,9 @@ class myLabel: UILabel {
     
     init(frame: CGRect, with textLabel: String) {
         super.init(frame: frame)
-        text = textLabel
-        font = .systemFont(ofSize: 20)
+        text        = textLabel
+        textColor   = .black
+        font        = .systemFont(ofSize: 20)
     }
     
     required init?(coder: NSCoder) {

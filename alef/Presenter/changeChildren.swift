@@ -43,7 +43,6 @@ class changeChildrenArrayClass {
         
     }
     
-    @objc
     func cleanAll() {
         clearData()
         guard let naPersonal = personalView?.nameAge,

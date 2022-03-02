@@ -20,6 +20,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let nc = UINavigationController(rootViewController: mainController())
         
+        let appearanceNotScroll = UINavigationBarAppearance()
+        appearanceNotScroll.backgroundColor = .lightGray
+        appearanceNotScroll.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        
+        let appearanceScroll = UINavigationBarAppearance()
+        appearanceScroll.backgroundColor = .white
+        appearanceScroll.titleTextAttributes = [.foregroundColor: UIColor.lightGray]
+        
+        nc.navigationBar.standardAppearance = appearanceNotScroll
+        nc.navigationBar.compactAppearance  = appearanceNotScroll
+        nc.navigationBar.scrollEdgeAppearance   = appearanceScroll
+        
         window?.rootViewController = nc
         
         window?.makeKeyAndVisible()
